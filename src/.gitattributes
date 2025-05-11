@@ -1,17 +1,1 @@
-# Tell GitHub Linguist to ignore Solidity files for language stats
-*.sol linguist-detectable=false
-
-# Make sure Noir files are included in language stats
-*.nr linguist-detectable=true
-
-# Optional: treat test data or build artifacts as generated
-# so GitHub doesn't count them in diffs or language stats
-build/** linguist-generated=true
-target/** linguist-generated=true
-tests/data/** linguist-generated=true
-
-# Normalize line endings for cross-platform compatibility
-*.nr text eol=lf
-*.sol text eol=lf
-*.toml text eol=lf
-*.md text eol=lf
+*.sol linguist-vendored
