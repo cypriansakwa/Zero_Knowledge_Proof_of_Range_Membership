@@ -39,24 +39,29 @@ Follow the official Noir install guide:
 👉 [https://noir-lang.org/getting-started/installation](https://noir-lang.org/getting-started/installation)
 
 ---
+## 2. 🔁 Clone the Repository
 
-## 2. Compile the Circuit
+```bash
+git clone https://github.com/cypriansakwa/Zero_Knowledge_Proof_of_Range_Membership.git
+cd Zero_Knowledge_Proof_of_Range_Membership
+```
+## 3. Compile the Circuit
 
 ```bash
 nargo compile
 ```
 This generates the proving and verification artifacts in the `target` directory.
-## 3. Create the Input File
+## 4. Create the Input File
 Create a `proof.toml` file in the root of your project:
 ```toml
 x = 42
 ```
 Make sure the value of x is within the valid range $\[10, 100\]$.
-4. **Generate the Proof**  
+## 5. **Generate the Proof**  
 Run: `nargo prove`  
 This creates the `proof.json` and `proof_public.json` files.  
 
-5. **Verify the Proof**  
+## 6. **Verify the Proof**  
 Run: `nargo verify`  
 Expected output:  
 `Proof verification successful`  
