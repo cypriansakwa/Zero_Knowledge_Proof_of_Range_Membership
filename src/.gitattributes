@@ -1,0 +1,2 @@
+*.sol linguist-detectable=false
+*.nr linguist-detectable=true
