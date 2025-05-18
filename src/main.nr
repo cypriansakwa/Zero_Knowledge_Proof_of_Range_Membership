@@ -1,4 +1,4 @@
-fn main(x: pub u32) {
+fn main(x: u32) {
     let lower_bound: u32 = 10;
     let upper_bound: u32 = 100;
 
